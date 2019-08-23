@@ -1,0 +1,133 @@
+/* ------------------------------------- Need By, Migration and Activation Date Colors*------------------------------------- */
+.range-date {
+  background: #a9afad ;
+}
+
+.not-range-date {
+  background-color: rgb(248, 252, 252);
+}
+
+.start-date {
+  background-color: rgb(252, 209, 42);
+}
+
+.end-date {
+  background-color: rgb(88, 139, 174);
+}
+.migration-date {
+
+  background-color: rgb(61, 194, 56);
+}
+
+.dot {
+    font-size: 60px;
+}
+
+/*------------------------------ Loader ---------------------------------- */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+.display-none {
+  display: none;
+}
+
+/* ------------------------------------------------FOR EXCEL BUTTON AND CLEAR BUTTON--------------------------------- */
+.buttons {
+  background-color: #00aaf5;
+  border: none;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* ---------------------------------------------------------FILTER BOXES--------------------------------------------------- */
+/* Title before the filterboxes */
+.title-bar {
+  display: -webkit-box;
+}
+
+.combobox-cls {
+  padding: 1px;
+  height: 30px;
+}
+
+/* ---------------------------------------------------------TABLE STYLES----------------------------------------------------- */
+
+/* https://www.tablesgenerator.com/html_tables */
+
+/* All Table Styles*/
+#tablestyle {
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  #tablestyle th, #tablestyle td {
+    border: 1px solid rgb(211, 207, 207);
+    padding: 5px;
+  }
+
+  /* Table Header Paddings */
+  #tablestyle th {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: left;
+    background-color: #00aaf5 ;
+    color: white;
+    width: "200";
+  }
+  
+  /* Every other Row*/
+  #tablestyle tr:nth-child(even){background-color: #f5e7e7;}
+  
+  /*Mouse Hover*/
+  #tablestyle tr:hover {background-color: hsl(171, 100%, 41%);}
+  
+  
+
+
+  
